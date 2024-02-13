@@ -1,0 +1,48 @@
+{
+  "apkFileName": "AGL2D_v1.2(1100)_src.apk",
+  "PackageInfo": {
+    "forcedPackageId": "127",
+    "renameManifestPackage": null
+  },
+  "doNotCompress": [
+    "resources.arsc",
+    "png"
+  ],
+  "compressionType": false,
+  "sparseResources": false,
+  "version": "2.4.0-240126",
+  "sharedLibrary": false,
+  "VersionInfo": {
+    "versionName": "1.2",
+    "versionCode": "1100"
+  },
+  "UsesFramework": {
+    "ids": [1],
+    "tag": null
+  },
+  "unknownFiles": {
+    "lua/permission.lua": "8",
+    "lua/loadmenu.lua": "8",
+    "lua/socket/url.lua": "8",
+    "lua/hex.lua": "8",
+    "lua/socket/headers.lua": "8",
+    "lua/xml.lua": "8",
+    "lua/base64.lua": "8",
+    "lua/loadbitmap.lua": "8",
+    "lua/http.lua": "8",
+    "okhttp3/internal/publicsuffix/NOTICE": "8",
+    "lua/json.lua": "8",
+    "lua/loadlayout.lua": "8",
+    "okhttp3/internal/publicsuffix/publicsuffixes.gz": "8",
+    "lua/import.lua": "8",
+    "lua/socket/tp.lua": "8",
+    "META-INF/com/android/build/gradle/app-metadata.properties": "8",
+    "lua/socket.lua": "8"
+  },
+  "apkFilePath": "/data/app/~HpyP3SsYUlwIyQgs3rrFRw==/com.genouka.cutelove2d-vx11zQY0DvG30CtIedygmA==/base.apk",
+  "isFrameworkApk": false,
+  "sdkInfo": {
+    "minSdkVersion": "21",
+    "targetSdkVersion": "29"
+  }
+}

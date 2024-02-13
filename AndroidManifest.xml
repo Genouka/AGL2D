@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.genouka.cutelove2d"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 允许该应用查看WLAN网络的相关信息，例如是否启用了WLAN以及连接的WLAN设备的名称。 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许该应用查看网络连接的相关信息，例如存在和连接的网络。 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许该应用创建网络套接字和使用自定义网络协议。浏览器和其他某些应用提供了向互联网发送数据的途径，因此应用无需该权限即可向互联网发送数据。 -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <!-- 允许该应用写入您共享存储空间中的内容。 -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用控制振动器。 -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- 允许该应用读取您共享存储空间中的内容。 -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature
+        android:glEsVersion="0x20000" />
+    <application
+        android:theme="@style/AppTheme"
+        android:label="AGL2D"
+        android:icon="@drawable/ic_launcher"
+        android:name="com.androlua.LuaApplication"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        android:supportsPictureInPicture="true"
+        android:requestLegacyExternalStorage="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="4" />
+        <activity
+            android:label="@string/app_name"
+            android:name="com.androlua.Main"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:label="@string/app_name"
+            android:name="com.androlua.LuaActivity"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:label="@string/app_name"
+            android:name="com.androlua.LuaActivityX"
+            android:exported="true"
+            android:excludeFromRecents="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:documentLaunchMode="intoExisting" />
+        <activity
+            android:label="@string/app_name"
+            android:name="com.androlua.Welcome"
+            android:exported="true"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="android.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.genouka.cutelove2d"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/androlua_filepaths" />
+        </provider>
+        <activity
+            android:label="@string/app_name"
+            android:name="org.love2d.android.GameActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|screenSize" />
+    </application>
+</manifest>
