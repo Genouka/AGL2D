@@ -96,7 +96,7 @@ end
 
 建议只修改`assets/game.love`内的文件。
 
-assets下所有文件会被当做Androlua的代码，会被提取到`data/data/<package_name>/files/`目录下（包括game.love）
+assets下所有文件会被当做Androlua的代码，会被提取到`/data/data/<package_name>/files/`目录下（包括game.love）
 
 game.love内的所有文件会被LOVE2D引擎进行解析。
 
@@ -126,7 +126,7 @@ code是字符串，可参考示例。
 
 本项目使用的Androlua源码部分使用MIT协议进行授权，因此本项目可以直接使用其源码。
 
-本项目使用的LOVE2D源码部分使用zlib协议进行授权。**由于本项目是由LOVE2D二进制文件的反编译项目生成而来，可能已经丢失原本的LICENSE文件，在此致歉！**根据zlib协议，以下协议应该是不与其冲突的。
+本项目使用的LOVE2D源码部分使用zlib协议进行授权。 **由于本项目是由LOVE2D二进制文件的反编译项目生成而来，可能已经丢失原本的LICENSE文件，在此致歉！** 根据zlib协议，以下协议应该是不与其冲突的。
 
 本项目除了assets目录以外，均使用木兰宽松许可证2授权，详见`LICENSE`文件。
 
