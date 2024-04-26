@@ -1,18 +1,15 @@
 # AGL2D
 (Androlua Genouka LOVE2D)
 
-NOTES:
-
-Here is only Chinese documents now.
+> [!NOTE]
+> Here is only Chinese documents now.
 
 We’re open to accept PRs that translate our README into English. You’re welcome to submit one.
 
-# 简介/INTRODUCION
-这是个把LOVE2D 11.4和Androlua(lua 5.3)融合的引擎！
+# 简介
+这是个把LOVE2D 11.4和Androlua(lua 5.3)融合的游戏引擎！
 
-手机写游戏的新福音！
-
-本项目可以做什么？
+### 本项目可以做什么？
 
 它可以支持在你的项目中：
 
@@ -31,11 +28,12 @@ We’re open to accept PRs that translate our README into English. You’re welc
 本项目的一部分是基于`LOVE2D 11.4 embed`版本的二进制文件反编译而来的，以便和Androlua的项目进行融合。
 
 
-# 示例/EXAMPLE
+# 示例
 
-**本项目就是本项目的示例，你可以克隆本仓库直接使用！**
+**本仓库的文件就是本项目的示例，你可以克隆本仓库直接使用！**
 
-本项目的编译、二次修改方法请参见下一节。
+> [!TIP]
+> 本项目的编译、二次修改方法请参见下一节。
 
 game.love是一个压缩包格式文件，请解压以查看源码。
 
@@ -82,15 +80,15 @@ function love.quit()
 end
 ```
 
-# 如何使用、编译、修改/How to use, compile or edit
+# 如何使用、编译、修改
 
-## 方法一：修改安装包（推荐）
+## 法一：修改安装包（推荐）
 
 从Release下载安装包，修改assets内文件后重新签名。
 
 建议只修改`assets/game.love`内的文件。
 
-## 方法二：修改源码
+## 法二：直接修改源码
 
 克隆仓库，使用Apktool M工具进行回编译即可。
 
@@ -102,15 +100,17 @@ game.love内的所有文件会被LOVE2D引擎进行解析。
 
 Androlua代码和LOVE2D代码目前使用Socket进行通信，如果有更好的实现欢迎PR和issue！
 
-# lls.lua
-提供了一系列接口方便调用Androlua代码。
+# 接口
+提供了一系列接口方便快速调用Androlua代码。
+
+这些接口由lls.lua导出。
 
 下面介绍提供的接口：
 
-## lls.init()
+### lls.init()
 初始化socket，只能调用一次，否则会出现意外的问题。
 
-## lls.run(code)
+### lls.run(code)
 运行Androlua代码，支持多行。
 
 code是字符串，可参考示例。
