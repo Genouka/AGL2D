@@ -3,8 +3,11 @@
 
 > [!NOTE]
 > For non-Chinese users(写给非中文用户):
+> 
 > Here is only Chinese documents now.
+> 
 > We’re open to accept PRs that translate our README into English.
+> 
 > You’re welcome to submit one.
 
 # 简介
