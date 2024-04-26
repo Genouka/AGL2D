@@ -2,9 +2,10 @@
 (Androlua Genouka LOVE2D)
 
 > [!NOTE]
+> For non-Chinese users(写给非中文用户):
 > Here is only Chinese documents now.
-
-We’re open to accept PRs that translate our README into English. You’re welcome to submit one.
+> We’re open to accept PRs that translate our README into English.
+> You’re welcome to submit one.
 
 # 简介
 这是个把LOVE2D 11.4和Androlua(lua 5.3)融合的游戏引擎！
