@@ -1,6 +1,11 @@
 # AGL2D
 (Androlua Genouka LOVE2D)
 
+# 简介
+**目前我不打算继续维护本项目，但是本项目非常稳定，完全可以用于生产环境**
+
+这是个把LOVE2D 11.4和Androlua(lua 5.3)融合的游戏引擎！
+
 > [!NOTE]
 > For non-Chinese users(写给非中文用户):
 > 
@@ -9,9 +14,6 @@
 > We’re open to accept PRs that translate our README into English.
 > 
 > You’re welcome to submit one.
-
-# 简介
-这是个把LOVE2D 11.4和Androlua(lua 5.3)融合的游戏引擎！
 
 ### 本项目可以做什么？
 
